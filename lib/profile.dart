@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+import './Terms.dart';
+import './Privacy.dart';
+
 class Myntraprofile extends StatelessWidget {
   final double circleRadius = 100.0;
   final double circleBorderWidth = 8.0;
@@ -159,13 +162,26 @@ class Myntraprofile extends StatelessWidget {
                         style: TextStyle(color: Colors.grey),
                         textAlign: TextAlign.center,
                       ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => TermsofUse()),
+                        );
+                      },
                     ),
                     ListTile(
+                      contentPadding: EdgeInsets.fromLTRB(0, 0, 0, 40),
                       title: Text(
                         'PRIVACY POLICY',
                         style: TextStyle(color: Colors.grey),
                         textAlign: TextAlign.center,
                       ),
+                      onTap: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => Privacy()),
+                        );
+                      },
                     ),
                     Container(
                       padding: EdgeInsets.all(20.0),

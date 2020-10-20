@@ -38,40 +38,29 @@ class _HomePageState extends State<HomePage> {
         items: [
           BottomNavigationBarItem(
             icon: FaIcon(FontAwesomeIcons.home),
-            title: new Text(
-              'Myntra',
-            ),
+            label: 'Myntra',
             backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
             icon: new Icon(Icons.category),
-            title: new Text(
-              'Categories',
-            ),
+            label: 'Categories',
             //backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
             icon: new Icon(Icons.tv),
-
-            title: new Text(
-              'Studio',
-            ),
+            label: 'Studio',
             //  backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
             icon: new Icon(Icons.explore),
-            title: new Text(
-              'Explore',
-            ),
+            label: 'Explore',
             //backgroundColor: Colors.blue,
           ),
           BottomNavigationBarItem(
             icon: new Icon(
               Icons.person_outline,
             ),
-            title: new Text(
-              'Profile',
-            ),
+            label: 'Profile',
             //backgroundColor: Colors.blue,
           ),
         ],
