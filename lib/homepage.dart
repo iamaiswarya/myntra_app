@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:myntra_app/profile.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import './Myntra_Home/myntra.dart';
 
 class HomePage extends StatefulWidget {
   @override
@@ -11,7 +12,7 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
   final tabs = [
     Center(
-      child: Text('myntra'),
+      child: Myntra(),
     ),
     Center(
       child: Text("Categories"),
@@ -31,7 +32,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       body: tabs[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
-        selectedItemColor: Colors.pink,
+        selectedItemColor: Colors.purpleAccent,
         unselectedItemColor: Colors.black,
         currentIndex: _currentIndex,
         type: BottomNavigationBarType.fixed,

@@ -16,7 +16,7 @@ class Myntraprofile extends StatelessWidget {
           'Profile',
           style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.purpleAccent,
       ),
       body: SingleChildScrollView(
         child: ConstrainedBox(
@@ -42,7 +42,7 @@ class Myntraprofile extends StatelessWidget {
                             style: TextStyle(color: Colors.white),
                           ),
                           padding: EdgeInsets.all(20.0),
-                          color: Colors.blue,
+                          color: Colors.purpleAccent,
                         ),
                       ),
                     ),
